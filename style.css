@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'montserrat';
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+body{
+    background-color: rgb(98, 207, 234);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+    height: 480px;
+    width: 320px;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.storyian{
+    height: 120px;
+    width: 100%;
+    border-bottom: 2px solid#dadada;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    padding: 15px;
+}
+.storyian::-webkit-scrollbar{
+    display: none;
+}
+.story{
+    height: 90px;
+    width: 90px;
+    border:2px solid red;
+    border-radius: 50%;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.story img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.fullscreen{
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    display: none;
+}
